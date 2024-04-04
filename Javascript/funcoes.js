@@ -79,7 +79,7 @@ function potencia(){
     num1 = parseInt(document.getElementById("tpNum").value);
     num2 = parseInt(document.getElementById("tsNum").value);
 
-    res = Math.pow(num1, num2);
+    res = num1 + " elevado a " + num2 + " é: " + Math.pow(num1, num2);
     document.getElementById("resultado").innerHTML = res;
 }//Fim do método
 
@@ -160,7 +160,7 @@ function parImpar(){
                                                  "\n" + num2 + " = " + res2 +
                                                  "\n" + num3 + " = " + res3;
 
-}
+}//Fim do método
 
 //Faça um programa que peça ao usuário um número e imprima se é positivo, negativo ou zero.
 function estadoNum(){
@@ -188,4 +188,109 @@ function verificar(num){
     else{
         return "Zero"
     }
-}
+}//Fim do método
+
+//Faça um programa que imprima os números de 1 a 10
+function exercicio1(){
+    var num = [];
+
+    for(i = 0; i < 10; i++){
+        num[i] = i + 1;
+    }
+    
+    document.getElementById("resultado").innerHTML = num;
+}//Fim do método
+
+//Faça um programa que imprima os números pares de 1 a 20
+function exercicio2(){
+    var num = [];
+    var posicao = 1;
+
+    for(i = 1; i < 21; i++){
+        if(i % 2 == 0){
+            num[posicao] = i;
+            posicao += 1;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML = num;
+}//Fim do método
+
+//Faça um programa que calcule a soma dos números de 1 a 100
+function exercicio3(){
+    var num = 0;
+
+    for(i = 1; i < 101; i++){
+        num += i
+    }
+
+    document.getElementById("resultado").innerHTML = num;
+}//Fim do método
+
+//Faça um programa que imprima os múltiplos de 5 de 1 a 50(múltiplos são números que podem ser divisiveis por 5 por exemplo )
+function exercicio4(){
+    var lista = [];
+    var posicao = 0;
+
+    for(i = 1; i < 51; i++){
+        if(i % 5 == 0){
+            lista[posicao] = i;
+            posicao += 1;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML = lista;
+}//Fim do método
+
+//Faça um programa que peça ao usuário um número e imprima os números de 1 até esse número
+function exercicio5(){
+    var num;
+    var res;
+
+    num = parseInt(document.getElementById("tpNum").value);
+
+    for(i = 1; i < num + 1; i++){
+        if(i == 1){
+            res = i;
+        }
+        else{
+            res = res + ", " + i
+        }
+    }
+
+    document.getElementById("resultado").innerHTML = res;
+}//Fim do método
+
+//Faça um programa que peça ao usuário um número e imprima a soma dos números de 1 até esse número
+function exercicio6(){
+    var num;
+    var res = 0;
+
+    num = parseInt(document.getElementById("tpNum").value);
+
+    for(i = 1; i < num + 1; i++){
+        res += i;
+    }
+
+    document.getElementById("resultado").innerHTML = res;
+}//Fim do método
+
+
+//Faça um programa que imprima os números primos de 1 a 20(número primo > 1 e apenas divisivel por 1 e ele mesmo)
+//divisão por número menores que ele(resposta?)
+function exercicio7(){
+    var primo;
+
+    for(i = 1; i < 21; i++){
+        if(i > 1 && i % 1 == 0 && i % i == 0){
+            primo = i + ", ";
+        }
+    }
+
+    document.getElementById("resultado").innerHTML = primo;
+}//Fim do método
+
+//Faça um programa que peça ao usuário um número e verifique se é primo
+
+
+//Faça um programa que calcule o fatorial de um número
