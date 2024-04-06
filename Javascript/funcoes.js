@@ -249,6 +249,11 @@ function exercicio5(){
 
     num = parseInt(document.getElementById("tpNum").value);
 
+    if(num < 1){
+        res = "Informe um número maior ou igual a 1"
+        document.getElementById("resultado").innerHTML = res
+    }
+
     for(i = 1; i < num + 1; i++){
         if(i == 1){
             res = i;
@@ -277,13 +282,21 @@ function exercicio6(){
 
 
 //Faça um programa que imprima os números primos de 1 a 20(número primo > 1 e apenas divisivel por 1 e ele mesmo)
-//divisão por número menores que ele(resposta?)
 function exercicio7(){
     var primo;
 
     for(i = 1; i < 21; i++){
-        if(i > 1 && i % 1 == 0 && i % i == 0){
-            primo = i + ", ";
+        if(i == 2){
+            primo = i;
+        }
+        else if(i == 2 || i == 3 || i == 5 || i == 7){
+            primo = primo + ", " + i;
+        }
+        else if(i % 2 == 0 || i % 3 == 0 || i % 5 == 0 || i % 7 == 0){
+            continue
+        }
+        else{
+            primo = primo + ", " + i;
         }
     }
 
@@ -291,6 +304,93 @@ function exercicio7(){
 }//Fim do método
 
 //Faça um programa que peça ao usuário um número e verifique se é primo
+function exercicio8(){
+    var num;
+    var primo;
 
+    num = parseInt(document.getElementById("tpNum").value)
+
+    if(num < 2){
+        primo = "Não é primo";
+    }
+    else if(num == 2 || num == 3 || num == 5 || num == 7){
+        primo = "Primo"
+    }
+    else if(num % 2 == 0 || num % 3 == 0 || num % 5 == 0 || num % 7 == 0){
+        primo = "Não é primo";
+    }
+    else{
+        primo = "Primo"
+    }
+
+    document.getElementById("resultado").innerHTML = primo;
+
+}//Fim do método
 
 //Faça um programa que calcule o fatorial de um número
+function exercicio9(){
+    var num;
+    var res;
+
+    res = num = parseInt(document.getElementById("tpNum").value)
+
+    while(num > 1){//Quando chega em 1, o código é executado mais uma vez e fecha
+        num = num - 1
+        res = res * (num)
+    }
+
+    document.getElementById("resultado").innerHTML = res;
+}//Fim do método
+
+//Faça um progrma que imprima a sequência de Fibonacci até o décimo termo
+//(1, 1, 2, 3, 5, 8, 13, 21, 34, 55)
+function exercicio10(){
+    var fibonacci = [];
+    fibonacci[0] = 1;
+    fibonacci[1] = 1;
+
+    for(i = 2; i < 10; i++){
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]
+    }
+
+    document.getElementById("resultado").innerHTML = fibonacci;
+
+}//Fim do método
+
+//Faça um programa que peça ao usuário um número e imprima os números pares e ímpares de 1 até esse número
+// CONTINUAR
+function exercicio11(){
+    var num;
+    var numPar = [];
+    var numImpar = [];
+    var posicaoPar = 0;
+    var posicaoImpar = 0;
+
+    num = parseInt(document.getElementById("tpNum").value)
+
+    if(num < 1){
+        res = "Informe um número maior ou igual a 1"
+        document.getElementById("resultado").innerHTML = res
+    }
+
+    for(i = 1; i < num + 1; i++){
+        if(i == 1){
+            numImpar[0] = i;
+            posicaoImpar = 1;
+        }
+        else if(i % 2 == 0){
+            numPar[posicaoPar] = i;
+            posicaoPar += posicaoPar + 1;
+        }
+        else{
+            numImpar[posicaoImpar] = i;
+            posicaoImpar += posicaoImpar + 1;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML = "Número Pares: \n" + numPar + "\nNúmero Ímpares: \n" + numImpar;
+}//Fim do método
+
+//Faça um programa que peça ao usuário um número e imprima os números primos de 1 até esse número
+
+//Faça um programa que peça ao usuário um número e imprima se é um número perfeito (a soma de seus divisores, excluindo ele mesmo, é igual ao próprio número)
