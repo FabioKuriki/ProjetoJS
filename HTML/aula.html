@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../Javascript/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    <title>Em aula</title><!--Aba do navegador-->
+</head>
+<body>
+    <header id="cabecalho">
+        <section id="projeto">
+            <h1 >ProjetoJS</h1>
+        </section>
+        <section id="professor">
+            <h3>Professor responsável: Allan</h3>
+        </section>
+    </header>
+    <section id="exercicio">
+        <form>
+            <label name="pNum">Primeiro Número(a): </label><!-- Name para banco de dados de PHP -->
+            <input type="number" name="tpNum" id="tpNum"><br><br>
+    
+            <label name="sNum">Segundo Número(b): </label>
+            <input type="number" name="tsNum" id="tsNum"><br><br>
+    
+            <label name="tNum">Terceiro Número(c - bhaskara): </label>
+            <input type="number" name="ttNum" id="ttNum"><br><br>
+        </form>
+    
+        <button type="submit" onclick="somar()"> + </button><!--Ao clicar executa a função informada-->
+        <button type="submit" onclick="subtrair()"> - </button>
+        <button type="submit" onclick="multiplicar()"> * </button>
+        <button type="submit" onclick="dividir()"> / </button>
+        <button type="submit" onclick="tabuada()"> Tabuada </button>
+        <button type="submit" onclick="potencia()"> Potência </button>
+        <button type="submit" onclick="raiz()"> Raiz </button>
+        <button type="submit" onclick="bhaskara()"> Bhaskara </button>
+        <button type="submit" onclick="parImpar()"> Par ou Ímpar </button>
+        <button type="submit" onclick="estadoNum()"> Estado do Número </button><br><br>
+    
+        <textArea id="resultado" rows="26" cols="30" readonly> Resultado </textArea>
+    </section>
+    <footer id="footerVoltar">
+        <article id="gitHub">
+            Desenvolvido por <a href="https://github.com/FabioKuriki">Fabio</a>
+        </article>
+        <article id="voltar">
+           <a id="linkVoltar"href="./index.html"><text id="botao">Voltar</text></a>
+        </article>
+    </footer>
+</body>
+</html>

@@ -452,3 +452,57 @@ function exercicio13(){
     }
     
 }//Fim do método
+
+
+//Para melhor visualização
+function questao1(){
+    alert("Faça um programa que imprima os números de 1 a 10")
+}//Fim do método
+
+function questao2(){
+    alert("Faça um programa que imprima os números pares de 1 a 20")
+}//Fim do método
+
+function questao3(){
+    alert("Faça um programa que calcule a soma dos números de 1 a 100")
+}//Fim do método
+
+function questao4(){
+    alert("Faça um programa que imprima os múltiplos de 5 de 1 a 50")
+}//Fim do método
+
+function questao5(){
+    alert("Faça um programa que peça ao usuário um número e imprima os números de 1 até esse número")
+}//Fim do método
+
+function questao6(){
+    alert("Faça um programa que peça ao usuário um número e imprima a soma dos números de 1 até esse número")
+}//Fim do método
+
+function questao7(){
+    alert("Faça um programa que imprima os números primos de 1 a 20")
+}//Fim do método
+
+function questao8(){
+    alert("Faça um programa que peça ao usuário um número e verifique se é primo")
+}//Fim do método
+
+function questao9(){
+    alert("Faça um programa que calcule o fatorial de um número")
+}//Fim do método
+
+function questao10(){
+    alert("Faça um progrma que imprima a sequência de Fibonacci até o décimo termo")
+}//Fim do método
+
+function questao11(){
+    alert("Faça um programa que peça ao usuário um número e imprima os números pares e ímpares de 1 até esse número")
+}//Fim do método
+
+function questao12(){
+    alert("Faça um programa que peça ao usuário um número e imprima os números primos de 1 até esse número")
+}//Fim do método
+
+function questao13(){
+    alert("Faça um programa que peça ao usuário um número e imprima se é um número perfeito (a soma de seus divisores, excluindo ele mesmo, é igual ao próprio número)")
+}//Fim do método

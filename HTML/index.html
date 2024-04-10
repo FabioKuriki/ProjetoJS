@@ -5,44 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="../Javascript/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
     <title>Página Principal</title>
 </head>
 <body>
-    <form>
-        <label name="pNum">Primeiro Número(a): </label><!-- Name para banco de dados de PHP -->
-        <input type="number" name="tpNum" id="tpNum"><br><br>
-
-        <label name="sNum">Segundo Número(b): </label>
-        <input type="number" name="tsNum" id="tsNum"><br><br>
-
-        <label name="tNum">Terceiro Número(c - bhaskara): </label>
-        <input type="number" name="ttNum" id="ttNum"><br><br>
-    </form>
-
-    <button type="submit" onclick="somar()"> + </button><!--Ao clicar executa a função informada-->
-    <button type="submit" onclick="subtrair()"> - </button>
-    <button type="submit" onclick="multiplicar()"> * </button>
-    <button type="submit" onclick="dividir()"> / </button>
-    <button type="submit" onclick="tabuada()"> Tabuada </button>
-    <button type="submit" onclick="potencia()"> Potência </button>
-    <button type="submit" onclick="raiz()"> Raiz </button>
-    <button type="submit" onclick="bhaskara()"> Bhaskara </button>
-    <button type="submit" onclick="parImpar()"> Par ou Ímpar </button>
-    <button type="submit" onclick="estadoNum()"> Estado do Número </button><br><br>
-    <button type="submit" onclick="exercicio1()"> Exercício 1 </button>
-    <button type="submit" onclick="exercicio2()"> Exercício 2 </button>
-    <button type="submit" onclick="exercicio3()"> Exercício 3 </button>
-    <button type="submit" onclick="exercicio4()"> Exercício 4 </button>
-    <button type="submit" onclick="exercicio5()"> Exercício 5 </button>
-    <button type="submit" onclick="exercicio6()"> Exercício 6 </button>
-    <button type="submit" onclick="exercicio7()"> Exercício 7 </button>
-    <button type="submit" onclick="exercicio8()"> Exercício 8 </button>
-    <button type="submit" onclick="exercicio9()"> Exercício 9 </button>
-    <button type="submit" onclick="exercicio10()"> Exercício 10 </button><br><br>
-    <button type="submit" onclick="exercicio11()"> Exercício 11 </button>
-    <button type="submit" onclick="exercicio12()"> Exercício 12 </button>
-    <button type="submit" onclick="exercicio13()"> Exercício 13 </button><br><br>
-
-    <textArea id="resultado" rows="30" cols="30" readonly> Resultado </textArea>
+    <header id="cabecalho">
+        <section id="projeto">
+            <h1 >ProjetoJS</h1>
+        </section>
+        <section id="professor">
+            <h3>Professor responsável: Allan</h3>
+        </section>
+    </header>
+    <section id="secoes">
+        <section id="imgAula">
+            <a href="./aula.html"><img class="imagem" src="../Imagens/aula.png"></a>
+        </section>
+        <section id="imgExercicio" >
+            <a href="./exercicios.html"><img class="imagem" src="../Imagens/exercicio.png"></a>
+        </section>
+    </section>
+    <footer>
+        Desenvolvido por <a href="https://github.com/FabioKuriki">Fabio</a>
+    </footer>
 </body>
 </html>
